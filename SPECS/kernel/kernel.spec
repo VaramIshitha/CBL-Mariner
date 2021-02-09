@@ -422,7 +422,7 @@ ln -sf linux-%{uname_r}.cfg /boot/mariner.cfg
 /lib/modules/%{uname_r}/build
 %{_prefix}/src/linux-headers-%{uname_r}
 
-%files drivers-sound
+%files drivers-accessibility
 %defattr(-,root,root)
 /lib/modules/%{uname_r}/kernel/drivers/accessibility
 
@@ -460,6 +460,9 @@ ln -sf linux-%{uname_r}.cfg /boot/mariner.cfg
 %endif
 
 %changelog
+* Mon Feb 08 2021 Thomas Crain <thcrain@microsoft.com> - 5.10.13.1-2
+- Add configs for speakup and uinput drivers
+
 * Tue Feb 02 2021 Chris Co <chrco@microsoft.com> - 5.10.13.1-1
 - Update source to 5.10.13.1
 - Remove patch to publish efi tpm event log on ARM. Present in updated source.

@@ -178,7 +178,7 @@ Summary:        Kernel accessibility modules
 Group:          System Environment/Kernel
 Requires:       %{name} = %{version}-%{release}
 
-%description drivers-sound
+%description drivers-accessibility
 This package contains the Linux kernel accessibility support
 
 %package drivers-sound
